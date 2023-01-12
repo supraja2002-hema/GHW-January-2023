@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Useless Hack&#128521</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: none;
+            }
+
+            .intro{
+                text-align: center;
+                margin-top: 200px;
+            }
+
+            body{
+                font-family: tahoma;
+                overflow: hidden;
+            }
+
+            .mfp-hide{
+                display: none !important;
+            }
+
+            .button{
+                padding: 20px 40px;
+                border-color: white;
+                font-size: 17px;
+                font-size: 1.7rem;
+                font-family: tahoma;
+                font-weight: bold;
+                margin-top: 15px;
+                display: inline-block;
+                border: 2px solid black;
+                color: black;
+                text-transform: uppercase;
+                transition: all 0.5s ease-in-out;
+                border-radius: 50px;
+                background: turquoise;
+                text-decoration: none;
+            }
+
+            .button .fa{
+                margin-left: 20px;
+            }
+
+            .button:hover, .button:focus{
+                background: transparent;
+                text-decoration: none;
+                color: palevioletred;
+                font-weight: bold;
+                outline: none;
+            }
+
+            iframe{
+                margin-left: 150px;
+                margin-top: 80px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="intro">
+        <h1>I am Dino!&#128521</h1>
+        <a href="#dino" class="button" id="videolink">Wanna See A Cute Dino?</a>
+        <div id="dino" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zYX2yHq9s_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+        $('#videolink').magnificPopup({
+            type:'inline',
+            midClick:true
+        });
+    </script>
+    </body>
+</html>
